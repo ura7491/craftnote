@@ -22,5 +22,18 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     #Аутентификация
-    path('signup/', views.signupuser, name='signupuser')
+    path('signup/', views.signupuser, name='signupuser'),
+
+    #Вход
+    path('login/', views.loginuser, name='loginuser'),
+
+    #Выход
+    path('logout/', views.logoutuser, name='logoutuser'),
+
+    #Главная
+    path('', views.home, name='home'),
+
+    #Задачи
+    path('current/', views.currenttask, name='currenttask'),
+
 ]
