@@ -18,7 +18,8 @@ cd craftnote
 python manage.py runserver
 
 Обязательная команда для миграции в БД
-python manage.py migrate
+python manage.py makemigrations - сначала определяем миграцию
+python manage.py migrate - потом мигрируем
 
 Полезные сайты:
 1. инструкция по установки виртуальной среды и запуск джанго
